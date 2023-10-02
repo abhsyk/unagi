@@ -1,0 +1,78 @@
+.header {
+  position: relative;
+  height: 75vh;
+  background: linear-gradient(
+      to left bottom,
+      rgba($color-black, 0.2),
+      rgba($color-black, 0.5)
+    ),
+    url("../images/bg.jpg") top no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  overflow: hidden;
+  
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  &__nav {
+    background-color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+    @include clearfix;
+
+    &-links {
+      float: right;
+      height: 8rem;
+    }
+
+    &-link {
+      position: relative;
+      top: 2.5rem;
+      display: inline-block;
+      list-style: none;
+      margin-right: 4rem;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom .5s;
+
+
+      &:hover,
+      &--active {
+        border-bottom: 1px solid $color-grey-dark;
+      }
+
+      a {
+        font-size: $font-size-default;
+        color: $color-black;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    animation: moveInTop 1s;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    content: "";
+    height: 40%;
+    width: 105%;
+    top: 35%;
+    left: -3rem;
+    background: rgba($color-black, $alpha: .3);
+    position: absolute;
+    filter: blur(1.5rem);
+  }
+}

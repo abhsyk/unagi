@@ -1,0 +1,35 @@
+.u-center-text {
+  margin: auto;
+  text-align: center;
+}
+
+.u-left-text {
+  // float: left;
+  // margin: auto;
+  display: inline;
+  text-align: left;
+}
+
+.u-small-text {
+  font-size: 80%;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+.u-margin-bottom-large {
+  margin-bottom: 8rem;
+}
+
+.u-separate {
+  margin: 0.5rem 0;
+  border-top: 1px dotted $color-grey-light-1;
+}
+
+.u-footer {
+  margin: 2rem 15rem;
+  border-top: 1px solid $color-grey;
+}

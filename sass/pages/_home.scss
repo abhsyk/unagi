@@ -1,0 +1,126 @@
+.section {
+  padding: 12rem 0 16rem;
+}
+
+.section-campaign {
+  background-color: $color-grey-light-1;
+
+  &__wrapper {
+    margin: 0 10rem;
+    // padding: 5rem 0;
+    // background-color: $color-primary;
+  }
+
+  &__list {
+    display: inline-block;
+    width: 60%;
+    margin: 4rem 0;
+    // background-color: $color-white;
+  }
+
+  &__item {
+    font-size: 2.2rem;
+    line-height: 4.5rem;
+    list-style: none;
+    text-align: end;
+    margin: 0 3rem;
+
+    @include clearfix;
+
+    .item-name {
+      float: left;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+    }
+
+    .emp {
+      font-size: 120%;
+      color: red;
+    }
+  }
+}
+
+.section-concept {
+  max-width: 70%;
+}
+
+.section-menu {
+  background-color: $color-grey-light-1;
+  position: relative;
+
+  &__content {
+    position: relative;
+
+    &:nth-child(2) {
+      margin-top: 10rem;
+    }
+  }
+
+  // &__img-box {
+  //   overflow: hidden;
+  //   &::after {
+  //     content: "";
+  //     width: 100%;
+  //     height: 35rem;
+  //     background-color: $color-black;
+  //     position: absolute;
+  //     top: -10rem;
+  //     left: 0;
+  //     border-radius: 50%;
+  //     // z-index: 10;
+  //   }
+  // }
+
+  &__img {
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+
+.section-access {
+  margin: 0 10rem 0;
+
+  &__title {
+    font-size: 1.8rem;
+  }
+
+  &__description {
+    padding: 0 3rem;
+  }
+}
+
+.info-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  padding: .8rem 3rem;
+  text-align: end;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  margin: 2rem 0;
+  letter-spacing: 1.2px;
+}
+
+.footer-nav {
+  margin: 0 auto;
+
+  &__links {
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    list-style: none;
+    // display: inline-block;
+    font-size: 1.4rem;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+    a {
+      color: $color-black;
+      text-decoration: none;
+    }
+  }
+}
